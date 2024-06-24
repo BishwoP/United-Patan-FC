@@ -1,0 +1,341 @@
+/* CSS Variables for consistency */
+:root {
+    --primary-color: rgba(252, 51, 1);
+    --secondary-color: rgba(0, 33, 94);
+    --text-color: white;
+    --bg-color: #f0f0f0;
+    --button-bg-google: #db4437;
+    --button-bg-facebook: #3b5998;
+    --button-bg-signin: #28a745;
+    --button-bg-signin-hover: #218838;
+    --font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    width: 100%;
+}
+
+/* Second Nav */
+.second-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: var(--primary-color);
+    z-index: 1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.logo { 
+    width: 86px;
+    height: 79px;
+    margin-right: 50px;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.shop-now-box {
+    margin-left: auto; 
+    margin-right: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: var(--text-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: transform 0.5s;
+}
+
+.shop-now-box i {
+    margin-right: 10px; 
+}
+
+.shop-now-box:hover {
+    transform: scale(1.05);
+}
+
+/* Login Section */
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    background-color: var(--bg-color);
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: stretch;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.login-content {
+    display: flex;
+    width: 100%;
+}
+
+.login-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.login-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.login-container h1 {
+    margin-top: 0;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-login button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.social-login button.google {
+    background-color: var(--button-bg-google);
+}
+
+.social-login button.facebook {
+    background-color: var(--button-bg-facebook);
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    height: 1px;
+    width: 45%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.account-details {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.options .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.options .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signin-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-signin);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signin-button:hover {
+    background-color: var(--button-bg-signin-hover);
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0,33,94);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+.footer .row-container {
+    display: flex;
+    gap: 0px;
+    margin: 0px 50px;
+    overflow: hidden;
+}
+
+.footer .row-container .logo { 
+    width: 180px;
+    height: 180px;
+    margin-top: 60px;
+}
+.footer .row-container .box-A {
+    line-height: 1.3;
+    padding-left: 0px;
+}
+
+.footer .row-container .box-A .line-1 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 70px;
+    font-weight: 700;
+    color: rgba(252, 51, 1);
+}
+.footer .row-container .box-A .line-2 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+}
+.footer .row-container .box-B {
+    padding-left: 100px;
+    padding-top: 30px;
+    line-height: 1.3;
+}
+
+.footer .row-container .box-C  {
+    padding-left: 120px;
+    padding-top: 30px;
+    line-height: 1.3;
+}
+.footer .row-container .box-B .header, .footer .row-container .box-C .header {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer .row-container .box-B .sub-h,  .footer .row-container .box-C .sub-h{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer .row-container .box-B i, .footer .row-container .box-C i {
+    color: rgba(252, 51, 1);
+    padding-right: 10px;
+}
+.footer .rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 70px;
+    background-color: rgb(252, 51, 1);
+    bottom: 0;
+}
+
+.footer .copyright {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+    margin:0 50px;
+}
+.footer .policy {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    margin:-25px 220px;
+}
